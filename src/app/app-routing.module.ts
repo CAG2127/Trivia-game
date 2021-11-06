@@ -6,6 +6,11 @@ import { ScorePageComponent } from './score-page/score-page.component';
 
 const routes: Routes = [
 {
+    path:"",
+    pathMatch: "full",
+   redirectTo: "login"
+},
+{
   path : "login",
   component: LoginPageComponent
 },
