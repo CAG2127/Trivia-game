@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { UserService } from './user.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +17,10 @@ export class GameService {
   ]
 
   correctAnswer:string ="Opcion 3"
-
-  constructor() { }
+  userService:UserService
+  httpClient:HttpClient
+  constructor(userService: UserService,httpClient: HttpClient) { 
+    this.userService= userService
+    this.httpClient = httpClient
+  }
 }

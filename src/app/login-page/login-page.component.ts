@@ -25,13 +25,20 @@ export class LoginPageComponent implements OnInit{
 
   userName = ""
   userPassword = ""
-  onUserNameCreate(){
+  async onUserNameCreate(){
     if (this.userName === "" || this.userPassword==""){
       alert("El nombre y password no debe estar vacio.")
       return
     }
+    const loginValidation = await this.userService.createUserName(this.userName,this.userPassword)
     this.userService.createUserName(this.userName, this.userPassword)
-    this.router.navigateByUrl('/game')
+    if(loginValidation == true){
+      this.router.navigateByUrl('/game')
+    }
+    else{
+      alert("LOGIN FALLED.")
+    }
+    
   }
 
   isLoggedIn(){
