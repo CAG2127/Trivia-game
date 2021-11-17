@@ -1,8 +1,29 @@
-<h1>Trivia</h1>
-
-<h2>Ingresa tu nombre</h2>
-
-<div>
-    <input type="text" [(ngModel)]="userName">
-<button (click)="onUserNameCreate()">Aceptar</button>
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="col container">
+            <h1>Trivia</h1>
+        </div>
+    </div>
+    <div class="row data-row">
+        <div class="col container">
+            <div>
+                <h2>Ingresa tu nombre</h2>
+            </div>
+            <div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-people"></i></span>
+                    <input [(ngModel)]="userName" type="text" class="form-control" placeholder="Name"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
+                    <input [(ngModel)]="userPassword" type="password" class="form-control" placeholder="Password"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="d-grid gap-2 col-4 mx-auto  mt-2 mb-3">
+                    <button class="accept-button" (click)="onUserNameCreate()">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

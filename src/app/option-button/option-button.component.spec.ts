@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GamePageComponent } from './game-page.component';
+import { OptionButtonComponent } from './option-button.component';
 
-describe('GamePageComponent', () => {
-  let component: GamePageComponent;
-  let fixture: ComponentFixture<GamePageComponent>;
+describe('OptionButtonComponent', () => {
+  let component: OptionButtonComponent;
+  let fixture: ComponentFixture<OptionButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GamePageComponent ]
+      declarations: [ OptionButtonComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GamePageComponent);
+    fixture = TestBed.createComponent(OptionButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

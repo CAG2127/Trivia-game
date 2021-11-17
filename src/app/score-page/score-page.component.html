@@ -1,1 +1,17 @@
-<p>score-page works!</p>
+<div class="container">
+    <div class="row header-container">
+        <div class="col-4">
+            <app-option-button [buttonText]="'Regresar'" (extarnalbuttonAction)="returnGame()">
+            </app-option-button>
+        </div>
+        <div class="col-4 trivia-container">
+            <app-title [titleText]="'Trivia'" [classText]="'text-center mb-5'"></app-title>
+            <app-title [titleText]="'Tabla de posiciones'" [classText]="'text-center mb-5'"></app-title>
+            <app-playercontainer *ngFor="let player of scoreService.players" [player]="player"></app-playercontainer>
+        </div>
+        <div class="col-4 container justify-content-md-end">
+            <app-option-button [buttonText]="'Cerrar sesión'" (extarnalbuttonAction)="signOut()"></app-option-button>
+        </div>
+    </div>
+
+</div>
