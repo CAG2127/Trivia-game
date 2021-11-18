@@ -21,6 +21,7 @@ export class GamePageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.userService.checkLoginUser()
   }
 
   signOut(){
@@ -35,11 +36,13 @@ export class GamePageComponent implements OnInit {
     }else{
       this.correctAnswer = 0
     }
+    this.gameService.sendUserResponse(this.gameService.currentQuestion,answer)
 
   }
 
   nextQuestion(){
     this.correctAnswer=-1
+    this.gameService.setNewTriviaQuestion()
   }
 
   gotoLeaderBoard(){

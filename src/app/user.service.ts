@@ -19,14 +19,18 @@ export class UserService {
       if(registerResponse.status == false){
         const loginResponse = await this.createLoginRequest(name,password)
         if(loginResponse.status == true){
-          return true
           localStorage.setItem("userName",name)
           localStorage.setItem("token",loginResponse.data.token)
+          this.userName=name
+          this.token=loginResponse.data.token
+          return true
         }
         return false
       }
       localStorage.setItem("userName",name)
           localStorage.setItem("token",registerResponse.data.token)
+          this.userName=name
+          this.token=registerResponse.data.token
       return true
      
   }
