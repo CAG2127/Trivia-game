@@ -1,16 +1,17 @@
 :host {
-    background-color: #db6719 !important;
+    background-color: white!important;
     display: block;
 }
 
 .header-container{
     height: 100vh;
-    padding-top: 10% !important;
-    color: white;
+    color: black;
+    background-color:yellowgreen;
 }
 
 .trivia-container{
     padding-top: 100px;
+    
 }
 
 img{
@@ -36,4 +37,5 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius:1em;
 }

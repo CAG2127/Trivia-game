@@ -1,12 +1,12 @@
 :host {
-    background-color: #c95e5e !important;
+    background-color: white !important;
     display: block;
 }
 
 .container-fluid {
     height: 100vh;
-    padding-top: 10% !important;
     color: white;
+    background-color: yellowgreen;
 }
 
 .container {

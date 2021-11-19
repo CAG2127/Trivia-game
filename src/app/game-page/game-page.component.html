@@ -5,7 +5,7 @@
             </app-option-button>
         </div>
         <div class="col-4 trivia-container">
-            <app-title [titleText]="'Trivia'" [classText]="'text-center mb-5'"></app-title>
+            <app-title [titleText]="'Trivia'" [classText]="'text-center mb-2'"></app-title>
             <div class="imgQuestion">
                 <img src="../../assets/comprobado.png" alt="" *ngIf="correctAnswer == 1">
                 <img src="../../assets/cancelar.png" alt="" *ngIf="correctAnswer == 0">
@@ -19,7 +19,7 @@
                 </app-option-button>
             </div>
         </div>
-        <div class="col-4 container justify-content-md-end">
+        <div class="col-4 container justify-content-md-end hola">
             <app-option-button [buttonText]="'Cerrar sesión'" (extarnalbuttonAction)="signOut()"></app-option-button>
         </div>
     </div>
