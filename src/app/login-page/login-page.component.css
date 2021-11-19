@@ -6,7 +6,7 @@
 .container-fluid {
     height: 100vh;
     color: white;
-    background-color: yellowgreen;
+    background-image: url(https://st2.cannypic.com/thumbs/40/406271_632_canny_pic.jpg);
 }
 
 .container {
@@ -14,7 +14,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 .accept-button {
@@ -30,5 +29,5 @@
 }
 
 .data-row {
-    margin-top: 10%;
+    margin-top: 6%;
 }

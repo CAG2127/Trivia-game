@@ -1,16 +1,22 @@
 :host {
-    background-color: #db6719 !important;
+    background-color:white!important;
     display: block;
 }
 
 .header-container{
     height: 100vh;
-    padding-top: 10% !important;
     color: white;
+    font-family:cursive;
+    background-image: url(https://st2.cannypic.com/thumbs/40/406271_632_canny_pic.jpg);
 }
 
 .trivia-container{
-    padding-top: 100px;
+    display: flex;
+    color:rgb(3, 3, 3);
+    flex-direction: column;
+    margin-top: 10em;
+
+    
 }
 
 img{
@@ -36,4 +42,20 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.uno{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.tres{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.hola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

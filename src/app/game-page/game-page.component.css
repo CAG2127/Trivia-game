@@ -4,15 +4,19 @@
 }
 
 .header-container{
+    display: flex;
     height: 100vh;
-    color: black;
-    background-color:yellowgreen;
+    color:black;
+    font-family:cursive;
+    background-image: url(https://st2.cannypic.com/thumbs/40/406271_632_canny_pic.jpg);
 }
 
 .trivia-container{
-    padding-top: 100px;
-    
+
+   margin-top: 4em;
+   
 }
+    
 
 img{
     width: 100px;
@@ -38,4 +42,15 @@ img{
     align-items: center;
     justify-content: center;
     border-radius:1em;
+}
+.hola{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+.holas{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
 }

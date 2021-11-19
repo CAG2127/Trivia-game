@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row header-container">
-        <div class="col-4">
+        <div class="col-4 hola">
             <app-option-button [buttonText]="'Ir a tabla de posiciones'" (extarnalbuttonAction)="gotoLeaderBoard()">
             </app-option-button>
         </div>
@@ -12,14 +12,16 @@
             </div>
             <p *ngIf="correctAnswer == -1" class="mb-3 text-center" >{{gameService.currentQuestion}}</p>
             <div class="option-container mb-5 mt-5">
-                <app-answer-button *ngFor="let option of gameService.answerOptions" [answer]="option" (buttonSelected)="selectAnswer($event)"></app-answer-button>
+                <div *ngFor="let option of gameService.answerOptions" >
+                    <app-answer-button *ngIf="option!= null"  [answer]="option" (buttonSelected)="selectAnswer($event)"> </app-answer-button>
+                </div>
             </div>
             <div class="button-next">
                 <app-option-button [buttonText]="'Siguiente'" (extarnalbuttonAction)="nextQuestion()">
                 </app-option-button>
             </div>
         </div>
-        <div class="col-4 container justify-content-md-end hola">
+        <div class="col-4 container holas">
             <app-option-button [buttonText]="'Cerrar sesión'" (extarnalbuttonAction)="signOut()"></app-option-button>
         </div>
     </div>
