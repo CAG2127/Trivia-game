@@ -5,8 +5,9 @@
             </app-option-button>
         </div>
         <div class="col-4 trivia-container">
-            <app-title [titleText]="'Trivia'" [classText]="'text-center mb-5'"></app-title>
-            <app-title [titleText]="'Tabla de posiciones'" [classText]="'text-center mb-5'"></app-title>
+            <div class="text-center"> <app-title [titleText]="'GAME TRIVIA'" [classText]="'text-center mb-3'"></app-title>
+                <app-title [titleText]="'Tabla de posiciones'" [classText]="'text-center mb-3'"></app-title></div>
+           
             <div class="hola"><app-playercontainer *ngFor="let player of scoreService.players" [player]="player"></app-playercontainer></div>
         </div>
         <div class="col-4 tres ">

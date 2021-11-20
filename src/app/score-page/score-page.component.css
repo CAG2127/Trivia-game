@@ -14,7 +14,7 @@
     display: flex;
     color:rgb(3, 3, 3);
     flex-direction: column;
-    margin-top: 10em;
+    margin-top: 13em;
 
     
 }
@@ -58,4 +58,9 @@ img{
     justify-content: center;
     align-items: center;
     
+}
+.text-center{
+    background-color: rgb(59, 118, 245,0.7);
+    color: white;
+    border-radius: 1em;
 }

@@ -54,3 +54,8 @@ img{
     justify-content: center;
     margin-top: 2em;
 }
+.text-center{
+    background-color: rgb(59, 118, 245,0.7);
+    color: white;
+    border-radius: 1em;
+}
